@@ -1,6 +1,8 @@
 package org.salty;
 
 import org.salty.decks.Card;
+import org.salty.examples.Conditionals;
+import org.salty.examples.Loops;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,5 +27,30 @@ public class CardsgamesMainapplication {
             System.out.println(card.toString());
 
         }
+
+        runLoopsExamples();
+
+        new Conditionals().ifStatement();
+
     }
+
+    private static void runLoopsExamples() {
+        Loops loops = new Loops();
+
+        loops.whileLoopExample();
+        System.out.println();
+
+        loops.doWhileLoopExample();
+        System.out.println();
+
+        loops.forLoopExample();
+        System.out.println();
+
+        loops.forEachLoopExample();
+        System.out.println();
+
+        loops.forEachLambdaExample();
+        System.out.println();
+    }
+
 }
